@@ -19,7 +19,7 @@
     <li class="mb-2"><%= t('welcome.instructions.list.start_quiz') %></a>
   </ul>
   <div class="text-center">
-  <%= link_to t('welcome.start_quiz'), step_path(id: 1), class:"btn btn-danger btn-md mx-auto px-5" %>
+  <%= link_to t('welcome.start_quiz'), step_path(id: 1, locale: I18n.locale), class:"btn btn-danger btn-md mx-auto px-5" %>
   </div>
 
 
