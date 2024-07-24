@@ -2,8 +2,15 @@
 <head>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<div class='lottie-bg'>
-  <lottie-player src="/assets/confetti.json" background="transparent"  speed="1" autoplay></lottie-player>
+<div>
+  <lottie-player src="/assets/confetti.json" background="transparent" style="  position: absolute;
+  z-index:1;
+  width: 95%;
+  height:100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right:auto;"  speed="1" autoplay></lottie-player>
 </div>
 <div id="results-page" class="container d-flex flex-column align-items-center mt-4 mb-4 pt-5">
   <h1 class="text-danger text-center"><%= t('results.heading') %></h1>
