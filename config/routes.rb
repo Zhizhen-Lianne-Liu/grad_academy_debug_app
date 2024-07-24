@@ -21,6 +21,7 @@ Rails.application.routes.draw do
         get 'results', to: 'steps#results'
         get 'scoreboard', to: 'steps#scoreboard'
         get 'download', to: 'steps#download'
+        get 'export_pdf', to: 'steps#export_pdf' # Added route for exporting PDFs
       end
     end
   end

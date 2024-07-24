@@ -4,15 +4,15 @@
   <hr class="border border-danger w-100 border-2 my-2">
 
   <table class="table mt-4">
-  <thread>
-  <tr>
-  <th>Quiz</th>
-  <th>User</th>
-  <th>Date</th>
-  <th>Score</th>
-  <th>Download Results</th>
-  </tr>
-  </thread>
+    <thead>
+      <tr>
+        <th>Quiz</th>
+        <th>User</th>
+        <th>Date</th>
+        <th>Score</th>
+        <th>Download Results</th>
+      </tr>
+    </thead>
     <tbody class="table-group-divider border-danger">
       <% @top_scores.each_with_index do |answer, _index| %>
         <tr>
@@ -37,7 +37,6 @@
       <% end %>
     </tbody>
   </table>
-
 </div>
 
 <div id="check-answers" class="container w-75">
@@ -48,6 +47,10 @@
 
     <%= link_to scoreboard_steps_path(format: :csv), class: 'btn btn-danger btn-md mb-2 mb-md-0' do %>
       <i class="bi bi-arrow-down-circle-fill me-2"></i> <%= t('scoreboard.buttons.download_all_results') %>
+    <% end %>
+
+    <%= link_to export_pdf_steps_path(format: :pdf), class: 'btn btn-danger btn-md mb-2 mb-md-0' do %>
+      <i class="bi bi-file-earmark-pdf-fill me-2"></i> <%= t('scoreboard.buttons.download_all_results_pdf') %>
     <% end %>
   </div>
 </div>

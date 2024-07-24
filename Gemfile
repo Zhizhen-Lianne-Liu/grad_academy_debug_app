@@ -20,6 +20,7 @@ gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
+gem 'prawn'
 
 group :development, :test do
   gem 'capybara'

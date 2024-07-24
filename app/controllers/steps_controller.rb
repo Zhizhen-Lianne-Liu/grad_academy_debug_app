@@ -92,6 +92,24 @@ class StepsController < ApplicationController
     end
   end
 
+  def export_pdf
+    @scores = Answer.where(completed: true) # Fetch completed quiz answers
+  
+    respond_to do |format|
+      format.pdf do
+        pdf = Prawn::Document.new
+        pdf.text "Scoreboard", size: 10, style: :bold
+  
+        @scores.each do |score|
+          pdf.text "User: #{score.user.username.humanize} - Score: #{score.score}" # Adjust to fetch the correct score attribute if different
+        end
+  
+        send_data pdf.render, filename: 'scoreboard.pdf', type: 'application/pdf'
+      end
+    end
+  end
+  
+
   private
 
   # Sets the quiz form based on parameters or defaults.
@@ -121,4 +139,7 @@ class StepsController < ApplicationController
     current_user.answers.last.update(completed: true)
     current_user.answers.where(completed: false).destroy_all
   end
+
+  
+  
 end
