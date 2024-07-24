@@ -52,7 +52,7 @@ en:
     back_button: "Back"
     scoreboard: "Scoreboard"
   quiz_results:
-    your_score: "YOUR SCORE: "
+    your_score: "Your score: "
     score: "%{score}%"
     questions_correctly_answered: "%{correct} of %{total} questions correctly answered"
   quiz_form:
@@ -152,7 +152,7 @@ en:
         correct_answer: "ruby"
   check_answers:
     title: "Check Answers"
-    heading: "CHECK YOUR ANSWERS"
+    heading: "Check your answers"
     submit_modal_title: "Confirm Submission"
     submit_modal_confirmation: "Are you sure you want to submit your answers and see your results?"
     submit_modal_cancel: "Cancel"
@@ -166,7 +166,7 @@ en:
       submit: "Submit your answers"
   results:
     title: "Results"
-    heading: "RESULTS"
+    heading: "Results"
     table:
       question: "Question"
       correct_answer: "Correct Answer"
@@ -176,7 +176,7 @@ en:
       continue: "Continue"
   scoreboard:
     title: "Scoreboard"
-    heading: "SCOREBOARD"
+    heading: "Scoreboard"
     table:
       quiz: "Quiz"
       user: "User"

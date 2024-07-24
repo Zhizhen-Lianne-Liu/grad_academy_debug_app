@@ -52,7 +52,7 @@ fr:
     back_button: "Retour"
     scoreboard: "Classement"
   quiz_results:
-    your_score: "VOTRE SCORE : "
+    your_score: "Votre score : "
     score: "%{score}%"
     questions_correctly_answered: "%{correct} sur %{total} questions correctement répondues"
   quiz_form:
@@ -152,7 +152,7 @@ fr:
         correct_answer: "Ruby"
   check_answers:
     title: "Vérifier les Réponses"
-    heading: "VÉRIFIEZ VOS RÉPONSES"
+    heading: "Vérifier les Réponses"
     submit_modal_title: "Confirmer la soumission"
     submit_modal_confirmation: "Êtes-vous sûr de vouloir soumettre vos réponses et voir vos résultats ?"
     submit_modal_cancel: "Annuler"
@@ -166,7 +166,7 @@ fr:
       submit: "Soumettre vos réponses"
   results:
     title: "Résultats"
-    heading: "RÉSULTATS"
+    heading: "Résultats"
     table:
       question: "Question"
       correct_answer: "Réponse Correcte"
@@ -176,7 +176,7 @@ fr:
       continue: "Continuer"
   scoreboard:
     title: "Classement"
-    heading: "CLASSEMENT"
+    heading: "Classement"
     table:
       quiz: "Quiz"
       user: "Utilisateur"
