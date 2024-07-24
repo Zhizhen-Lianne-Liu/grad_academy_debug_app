@@ -16,12 +16,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_23_140312) do
 
   create_table "answers", force: :cascade do |t|
     t.bigint "user_id"
+    t.text "answer"
+    t.datetime "date_attempted"
+    t.boolean "completed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "score", default: 0
-    t.boolean "completed"
-    t.datetime "date_attempted"
-    t.text "answer"
+    t.index ["completed"], name: "index_answers_on_completed"
     t.index ["score"], name: "index_answers_on_score"
     t.index ["user_id"], name: "index_answers_on_user_id"
   end

@@ -4,10 +4,10 @@ input[type="radio"] {
   height: 15px;
   padding: 2px;
   background-clip: content-box;
-  border: 1px solid $red;
+  border: 1px solid $indigo;
   border-radius: 50%;
 }
 
 input[type="radio"]:checked {
-  background-color: $red;
+  background-color: $indigo;
 }
