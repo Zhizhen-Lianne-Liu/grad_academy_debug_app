@@ -41,11 +41,11 @@
 
 <div id="check-answers" class="container w-75">
   <div class="d-flex flex-column flex-sm-row justify-content-between">
-    <%= link_to step_path(id: 1), class: "btn btn-outline-danger btn-md mb-2 mb-md-0" do %>
+    <%= link_to step_path(id: 1), class: "btn btn-outline-success btn-md mb-2 mb-md-0" do %>
       <i class="bi bi-play-circle me-2"></i> <%= t('scoreboard.buttons.start_new_quiz') %>
     <% end %>
 
-    <%= link_to scoreboard_steps_path(format: :csv), class: 'btn btn-danger btn-md mb-2 mb-md-0' do %>
+    <%= link_to scoreboard_steps_path(format: :csv), class: 'btn btn-success btn-md mb-2 mb-md-0' do %>
       <i class="bi bi-arrow-down-circle-fill me-2"></i> <%= t('scoreboard.buttons.download_all_results') %>
     <% end %>
 
