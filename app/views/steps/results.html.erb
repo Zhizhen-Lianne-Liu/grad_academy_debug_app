@@ -1,6 +1,13 @@
 <% provide(:title, t('results.title')) %>
+<head>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<div class='lottie-bg'>
+  <lottie-player src="/assets/confetti.json" background="transparent"  speed="1" autoplay></lottie-player>
+</div>
 <div id="results-page" class="container d-flex flex-column align-items-center mt-4 mb-4 pt-5">
   <h1 class="text-danger text-center"><%= t('results.heading') %></h1>
+  
   <hr class="border border-danger w-100 border-2 my-2">
 
   <div class="border border-danger w-100 rounded mt-4 mb-4 px-1">
